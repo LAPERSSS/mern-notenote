@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import g1 from "../../assets/g1.jpg";
 import g2 from "../../assets/g2.jpg";
 import g3 from "../../assets/g3.jpg";
@@ -9,12 +10,15 @@ const home = () => {
   return (
     <>
       <section className="cardMain items-center justify-center p-10 grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-2">
-        <div className="group relative items-center justify-center overflow-hidden cursor-pointer">
-          <img src={g1} alt="" className="" />
-          <div className="absolute flex h-full w-full justify-center items-center bg-black/80 -translate-y-[100%] font-main text-5xl opacity-0 hover:opacity-100 text-color-accent  ease-out transition-all">
-            Fisika
+        <Link to="#">
+          <div className="group relative items-center justify-center overflow-hidden cursor-pointer">
+            <img src={g1} alt="" className="" />
+            <div className="absolute flex h-full w-full justify-center items-center bg-black/80 -translate-y-[100%] font-main text-5xl opacity-0 hover:opacity-100 text-color-accent  ease-out transition-all">
+              Fisika
+            </div>
           </div>
-        </div>
+        </Link>
+
         <div className="group relative items-center justify-center overflow-hidden cursor-pointer">
           <img src={g2} alt="" className="" />
           <div className="absolute flex h-full w-full justify-center items-center bg-black/80 -translate-y-[100%] font-main text-5xl opacity-0 hover:opacity-100 text-color-accent  ease-out transition-all">

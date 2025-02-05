@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 const Register = () => {
+  function handleRegister() {}
   return (
     <>
       <div className="flex h-screen justify-center items-center">
@@ -25,7 +26,7 @@ const Register = () => {
           <div className="flex text-color-accent bg-white p-2 m-2 font-main text-2xl rounded-xl justify-center cursor-pointer">
             Submit
           </div>
-          <Link to="/login">
+          <Link to="/login" onClick={handleRegister}>
             <p className="text-center m-2 font-main text-color-accent hover:text-color-base cursor-pointer">
               Already have an account?
             </p>

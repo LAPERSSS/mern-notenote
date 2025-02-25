@@ -41,11 +41,11 @@ const Login = () => {
           </div>
           <form action="" className="flex flex-col m-2">
             <h2 className="text-xl font-main ps-2 text-color-accent">Email</h2>
-            <input type="text" className="p-2 rounded-xl mb-2 " />
+            <input type="text" id="email" className="p-2 rounded-xl mb-2 " />
             <h2 className="text-xl font-main ps-2 text-color-accent">
               Password
             </h2>
-            <input type="text" className="p-2 rounded-xl" />
+            <input type="text" id="password" className="p-2 rounded-xl" />
           </form>
           <p className="text-center m-2 font-main text-color-accent">
             Or login with
